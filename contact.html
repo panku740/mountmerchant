@@ -4,29 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products and Services | Mountmerchant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="mountmerchant-css.css ">
 </head>
 <body>
     <header>
         <div class="header-top">
             <div class="logo">
-                <a href="#"><img src="./0 copy 2.png" alt="mountmerchant Logo"></a>
+                <a href="index.html"><img src="logo.png" alt="mountmerchant Logo"></a>
             </div>
-            <!-- <nav class="top-nav">
+            <nav class="top-nav">
                 <ul>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Media</a></li>
-                    <li><a href="#">Global Sites</a></li>
+                    <li><i class="fa fa-mobile fa-lg"></i><a href="#"> +91-8950501144, +91-8950501166</a></li>
+                    <li><i class="fa fa-envelope"></i><a href="#"> mountmerchant.sales@gmail.com</a></li>
+
                 </ul>
-            </nav> -->
+            </nav>
             <button class="mobile-menu-btn">☰</button>
         </div>
-        <nav class="main-nav">
+       <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li class="dropdown-parent">
+                    <a href="products.html">Products <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="products.html">Vitamins &amp; Minerals</a></li>
+                        <li><a href="products.html">Food Additives</a></li>
+                        <li><a href="products.html">Flavours &amp; Sweeteners</a></li>
+                        <li><a href="products.html">Fruit &amp; Vegetable Powder</a></li>
+                        <li><a href="products.html">Extracts</a></li>
+                        <li><a href="products.html">Amino Acids</a></li>
+                        <li><a href="products.html">Enzymes</a></li>
+                        <li><a href="products.html">Proteins</a></li>
+                        <li><a href="products.html">Speciality Chemicals</a></li>
+                        <li><a href="products.html">Colors</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">Products and Services</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
@@ -41,15 +55,17 @@
         <div class="services-container">
             <div class="service-box">
                 <h3>Email</h3>
-                <p>mountmerchant.gmail.com</p>
+                <p style="font-size: 16px;">mountmerchant.sales@gmail.com</p>
             </div>
             <div class="service-box">
                 <h3>Phone</h3>
-                <p>+91 7777077868</p>
+                <p style="font-size: 16px;">+918950501144</p>
+                <!-- <br> -->
+                <p style="font-size: 16px;">+918950501166</p>
             </div>
             <div class="service-box">
                 <h3>Address</h3>
-                <p>Delhi NCR</p>
+                <p style="font-size: 16px;">Noida</p>
             </div>
             
         </div>
@@ -111,15 +127,7 @@
         </div>
     </footer>
 
-    <!-- <script src="mountmerchant-js.js"></script>
-    <script>
-        const container = document.querySelector('.bars-container');
-        for (let i = 0; i < 50; i++) {
-          const bar = document.createElement('span');
-          bar.style.setProperty('--i', i);
-          container.appendChild(bar);
-        }
-      </script> -->
+    
    
 </body>
 </html>
