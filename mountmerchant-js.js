@@ -256,4 +256,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Run animation on page load and scroll
     window.addEventListener('scroll', animateFeatures);
     animateFeatures(); // Run once on page load
+
 });
+
