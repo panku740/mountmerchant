@@ -573,6 +573,13 @@ header {
     text-align: center;
 }
 
+.cta-section {
+    padding: 80px 5%;
+    background-color: #11617a;
+    color: white;
+    text-align: center;
+}
+
 .cta-section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -582,6 +589,114 @@ header {
     font-size: 1.2rem;
     max-width: 800px;
     margin: 0 auto 30px;
+}
+
+
+.cta-section1 {
+    padding: 20px 5%;
+    background-color: #11617a;
+    color: white;
+    text-align: center;
+}
+
+.cta-section1 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cta-section1 p {
+    font-size: 1.2rem;
+    max-width: 100%;
+    margin: 0 auto 30px;
+    text-justify: left;
+}
+/* Product specifications table */
+.specs-section {
+    padding: 50px 5%;
+    background: linear-gradient(180deg, #f7f6f4 0%, #eef2f5 100%);
+}
+
+.specs-section .section-title {
+    margin-bottom: 12px;
+    color: #1f3850;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.specs-section .section-subtitle {
+    max-width: 760px;
+    margin: 0 auto 30px;
+    text-align: center;
+    color: #566975;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    padding: 0 12px;
+}
+
+.spec-table {
+    width: 100%;
+    min-width: 620px;
+    border-collapse: collapse;
+    background: #ffffff;
+    box-shadow: 0 24px 60px rgba(16, 40, 70, 0.12);
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.spec-table th,
+.spec-table td {
+    padding: 20px 22px;
+    text-align: left;
+    border-bottom: 1px solid #e7ebf0;
+}
+
+.spec-table th {
+    background: linear-gradient(90deg, #d9e5f1, #eef4f9);
+    color: #0d3959;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.spec-table td {
+    color: #4a5a6a;
+}
+
+.spec-table tr:nth-child(even) {
+    background-color: #fbfcfd;
+}
+
+.spec-table tr:hover {
+    background-color: #f1f7fb;
+}
+
+.spec-table tr:last-child td {
+    border-bottom: none;
+}
+
+.spec-table td:first-child {
+    color: #22334f;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .specs-section {
+        padding: 40px 4%;
+    }
+
+    .spec-table {
+        min-width: 0;
+    }
+
+    .spec-table th,
+    .spec-table td {
+        padding: 16px 14px;
+    }
 }
 
 /* Footer */
