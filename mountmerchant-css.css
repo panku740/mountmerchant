@@ -38,7 +38,7 @@ img {
 .pbtn {
     display: inline;
     padding: 10px 20px;
-    background-color: #2c549c;
+    background-color: #11617a;
     color: white;
     font-weight: bold;
     width: 100%;
@@ -50,11 +50,11 @@ img {
 
 .pbtn:hover {
     transform: scale(1.1);
-    background-color: #1e3f6f;
+    background-color: #11617a;
 }
 
 .btn:hover {
-    background-color: #0052a3;
+    background-color: #11617a;
 }
 
 .btn-white {
@@ -230,7 +230,7 @@ img {
 
 /* Header Styles */
 header {
-    background-color: rgba(255,255,255,0);
+    background-color: #f9fafc;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     position: sticky;
     top: 0;
@@ -242,7 +242,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0px 2%;
-    background-color: rgba(255,255,255,255);
+    background-color: #f9fafc;
     /* border-bottom: 1px solid #eeeeee; */
 }
 
@@ -264,7 +264,7 @@ header {
 }
 
 .top-nav a:hover {
-    color: #0c6464;
+    color: #11617a;
 }
 
 .mobile-menu-btn {
@@ -320,7 +320,7 @@ header {
 
 .dropdown li a:hover {
     background-color: #c5dce2;
-    color:  #0c6464;
+    color:  #11617a;
 }
 
 .dropdown-parent:hover > .dropdown,
@@ -329,7 +329,7 @@ header {
 }
 
 .main-nav a:hover {
-    color: #0c6464;
+    color: #11617a;
 }
 
 .main-nav a::after {
@@ -339,7 +339,7 @@ header {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color:  #0c6464;
+    background-color:  #11617a;
     transition: width 0.3s;
 }
 
@@ -414,7 +414,7 @@ header {
 
 .product-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 15px 25px #11617a;
 }
 
 .product-img {
@@ -568,7 +568,7 @@ header {
 /* CTA Section */
 .cta-section {
     padding: 80px 5%;
-    background-color: #01386e;
+    background-color: #11617a;
     color: white;
     text-align: center;
 }
@@ -776,7 +776,7 @@ footer {
 /* Why Choose Us Section Styles */
 .why-choose-us {
     padding: 30px 5%;
-    background-color: #e8e9e9;
+    background-color: #eeeeee;
 }
 
 
@@ -844,14 +844,20 @@ footer {
     position: relative;
   }
   
-  .scroll-img {
-    width: 90%;           /* make image small */
-    height: auto;           
-    position: absolute;
-    top: 50%;              /* move image lower (adjust as needed) */
-    left: -120px;           /* start off-screen left */
-    animation: movePhoto 20s linear infinite;
-  }
+    .scroll-img {
+        width: 90%;           /* make image small */
+        height: auto;           
+        position: absolute;
+        top: 50%;              /* move image lower (adjust as needed) */
+        left: -110px;           /* start off-screen left */
+        /* Keep long duration but stagger duplicates to avoid wait */
+        animation: movePhoto 20s linear infinite;
+    }
+
+    /* Stagger second image so next loop starts visually earlier */
+    .scroll-container-train .scroll-img:nth-child(2) {
+        animation-delay: -10s; /* start halfway through the cycle */
+    }
   
   /* Smooth left-to-right scroll */
   @keyframes movePhoto {
@@ -944,13 +950,13 @@ img {vertical-align: middle;}
   max-width: 100%;
   position: relative;
     margin: 0;
-    margin-top: -180px; /* pull slideshow up under the header */
+    margin-top: 0px; /* pull slideshow up under the header */
     z-index: 0;
 }
 
 .slideshow-container img {
   width: 100%;
-  height: 650px;
+  height: 100%;
   object-fit: cover;
   opacity: 0.8;
 }
