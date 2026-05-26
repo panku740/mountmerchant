@@ -230,25 +230,59 @@ img {
 
 /* Header Styles */
 header {
-    background-color: #f9fafc;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    position: sticky;
-    top: 0;
+    background: rgba(236, 236, 236, 0.6);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.055);
+    position: fixed;
+    width: 90%;
+
+    
+    /* position: fixed; */
+    top: 10px;
     z-index: 100;
+    /* Round left side */
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+
+  /* Round right side */
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  left: 50%;
+  transform: translateX(-50%); /* ensures perfect centering */
+  transition: background-color 0.3s ease;
 }
 
 .header-top {
+    background: rgba(255, 255, 255, 0.6);
+    /* backdrop-filter: blur(10px); */
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    padding: 0px 2%;
+    padding-left: 15px ;
+    height: 40px;
     background-color: #f9fafc;
-    /* border-bottom: 1px solid #eeeeee; */
+    background:transparent;
+    position: relative;
+    /* Round left side */
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+
+  /* Round right side */
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin: 15px;
 }
 
+
 .logo img {
-    height: 80px;
+    height: 60px;
 }
+
+.logo { order: 1; }
+
+.mobile-menu-btn { order: 3; margin: 0 auto;  }
+
+.main-nav { order: 2; margin: 0 auto; }
 
 .top-nav ul {
     display: flex;
@@ -593,7 +627,8 @@ header {
 
 
 .cta-section1 {
-    padding: 20px 5%;
+    padding: 100px 5% 2% 5%;
+    /* padding: 20px 5%; */
     background-color: #11617a;
     color: white;
     text-align: center;
@@ -1072,8 +1107,10 @@ img {vertical-align: middle;}
 .slideshow-container img {
   width: 100%;
   height: 100%;
+  max-height: 700px;
+  /* max-height: 700px; */
   object-fit: cover;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 /* Caption text */
@@ -1163,3 +1200,34 @@ border-radius: 50%;
   border-radius: 50%;
 }
 
+.slideshow-container {
+            position: relative;
+        }
+
+        .dots-container {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 12px;
+            z-index: 10;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.6);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dot.active {
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .dot:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
