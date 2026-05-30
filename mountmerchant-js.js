@@ -11,6 +11,18 @@ document.addEventListener('DOMContentLoaded', function() {
             mainNav.classList.toggle('active');
         });
     }
+
+    if (mainNav) {
+        const navCloseBtn = document.createElement('button');
+        navCloseBtn.type = 'button';
+        navCloseBtn.className = 'nav-close-btn';
+        navCloseBtn.innerHTML = '&times;';
+        mainNav.appendChild(navCloseBtn);
+
+        navCloseBtn.addEventListener('click', function() {
+            mainNav.classList.remove('active');
+        });
+    }
     
     // Product card functionality - Add hover effects
     const productCards = document.querySelectorAll('.product-card');
